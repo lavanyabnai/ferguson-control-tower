@@ -1,0 +1,29 @@
+[
+  {
+    "delivery": "Customer",
+    "product": "Product A",
+    "type": "closest(Dynamic Sourcing)",
+    "parameter": "No parameters",
+    "sources": "DC",
+    "timePeriod": "All periods",
+    "inculusionType": "Include"
+  },
+  {
+    "delivery": "Ferguson DC Dallas",
+    "product": "Product A",
+    "type": "closest(Dynamic Sourcing)",
+    "parameter": "No parameters",
+    "sources": "supplier",
+    "timePeriod": "All periods",
+    "inculusionType": "Include"
+  },
+   {
+     "delivery": "DC",
+     "product": "Product A",
+     "type": "closest(Dynamic Sourcing)",
+     "parameter": "No parameters",
+     "sources": "Ferguson DC Dallas",
+     "timePeriod": "All periods",
+     "inculusionType": "Include"
+   }
+]

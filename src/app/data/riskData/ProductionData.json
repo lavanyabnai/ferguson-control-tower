@@ -1,0 +1,46 @@
+[
+  {
+    "sources": "Ferguson DC Dallas",
+    "destination": "DC",
+    "product": "(All products)",
+    "vehicletype": "Truck",
+    "type":"LTL",
+    "parameter": "Partial delivery",
+    "priority": "FIFO",
+    "Days": "All days",
+    "time": "12:00 AM"
+  },
+  {
+    "sources": "Supplier",
+    "destination": "Ferguson DC Dallas",
+    "product": "(All products)",
+    "vehicletype": "Truck",
+    "type": "LTL",
+    "parameter": "Partial delivery",
+    "priority": "FIFO",
+    "Days": "All days",
+    "time": "12:00 AM"
+  },
+  {
+    "sources": "Ferguson DC Atlanta",
+    "destination": "Customer",
+    "product": "(All products)",
+    "vehicletype": "Truck",
+    "type": "LTL",
+    "parameter": "Partial delivery",
+    "priority": "FIFO",
+    "Days": "All days",
+    "time": "12:00 AM"
+  },
+  {
+    "sources": "Ferguson Branch Miami",
+    "destination": "Customer",
+    "product": "(All products)",
+    "vehicletype": "Truck",
+    "type": "LTL",
+    "parameter": "Partial delivery",
+    "priority": "FIFO",
+    "Days": "All days",
+    "time": "12:00 AM"
+  }
+]

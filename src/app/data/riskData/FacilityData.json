@@ -1,0 +1,56 @@
+[
+  {
+    "facility": "Ferguson DC Dallas",
+    "expenseType": "Carrying Cost",
+    "value": 0.005,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "pcs",
+    "timePeriod": "(All Periods)"
+  },
+  {
+    "facility": "Ferguson DC Dallas",
+    "expenseType": "Other Costs",
+    "value": 2630,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "",
+    "timePeriod": "(All Periods)"
+  },
+  {
+    "facility": "Ferguson Branch Miami",
+    "expenseType": "Other Costs",
+    "value": 70,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "",
+    "timePeriod": "(All Periods)"
+  },
+  {
+    "facility": "Ferguson DC Atlanta",
+    "expenseType": "Other Costs",
+    "value": 100,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "",
+    "timePeriod": "(All Periods)"
+  },
+  {
+    "facility": "Ferguson DC Atlanta",
+    "expenseType": "Carrying Cost",
+    "value": 0.2,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "Copper Pipe Pallets",
+    "timePeriod": "(All Periods)"
+  },
+  {
+    "facility": "Ferguson Branch Miami",
+    "expenseType": "Carrying Cost",
+    "value": 0.1,
+    "currency": "USD",
+    "timeUnit": "day",
+    "productUnit": "Copper Pipe Pallets",
+    "timePeriod": "(All Periods)"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "facility": "Ferguson DC Dallas",
+    "product": "Product A",
+    "type": "Outbound Shipment",
+    "units": "Copper Pipe Pallets",
+    "cost": "0.66",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Atlanta",
+    "product": "Product A",
+    "type": "Outbound Shipment",
+    "units": "Copper Pipe Pallets",
+    "cost": "0.66",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Atlanta",
+    "product": "Product A",
+    "type": "Inbound Shipment",
+    "units": "Copper Pipe Pallets",
+    "cost": "1",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson Branch Miami",
+    "product": "Product A",
+    "type": "Outbound Shipment",
+    "units": "Copper Pipe Pallets",
+    "cost": "0.33",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Dallas",
+    "product": "Product A",
+    "type": "Inbound Shipment",
+    "units": "Copper Pipe Pallets",
+    "cost": "0.5",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Dallas",
+    "product": "Fitting Kit A",
+    "type": "Inbound Shipment",
+    "units": "Fitting Kit Pallets",
+    "cost": "40",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Dallas",
+    "product": "Copper Raw A",
+    "type": "Inbound Shipment",
+    "units": "Copper Raw Pallets",
+    "cost": "40",
+    "currency": "USD",
+    "time": "(All periods)"
+  },
+  {
+    "facility": "Ferguson DC Dallas",
+    "product": "PVC Resin A",
+    "type": "Inbound Shipment",
+    "units": "PVC Resin Pallets",
+    "cost": "40",
+    "currency": "USD",
+    "time": "(All periods)"
+  }
+]

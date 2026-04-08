@@ -1,0 +1,46 @@
+[
+  {
+    "from": "Ferguson DC Dallas",
+    "to": "DC",
+    "cost": "Product & Distance",
+    "costCalculation": "0.07 Product & Distance",
+    "co2Calculation": "0",
+    "currency": "USD",
+    "distance": "0",
+    "distanceUnit": "km",
+    "transport": "0"
+  },
+  {
+    "from": "Supplier",
+    "to": "Ferguson DC Dallas",
+    "cost": "Fixed Delivery",
+    "costCalculation": "0",
+    "co2Calculation": "0",
+    "currency": "USD",
+    "distance": "0",
+    "distanceUnit": "km",
+    "transport": "0"
+  },
+   {
+     "from": "Ferguson DC Atlanta",
+     "to": "Customer",
+     "cost": "Product & Distance",
+     "costCalculation": "0",
+     "co2Calculation": "0",
+     "currency": "USD",
+     "distance": "0",
+     "distanceUnit": "km",
+     "transport": "0"
+   },
+     {
+       "from": "Ferguson Branch Miami",
+       "to": "Customer",
+       "cost": "Product & Distance",
+       "costCalculation": "0",
+       "co2Calculation": "0",
+       "currency": "USD",
+       "distance": "0",
+       "distanceUnit": "km",
+       "transport": "0"
+     }
+]

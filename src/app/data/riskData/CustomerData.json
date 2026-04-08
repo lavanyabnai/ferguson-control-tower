@@ -1,0 +1,352 @@
+[
+  {
+    "Name": "Los Angeles",
+    "Type": "Plumbing Contractor",
+    "Location": "New York",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 0"
+  },
+  {
+    "Name": "Chicago",
+    "Type": "Plumbing Contractor",
+    "Location": "Los Angeles",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 1"
+  },
+  {
+    "Name": "Houston",
+    "Type": "General Contractor",
+    "Location": "Chicago",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 2"
+  },
+  {
+    "Name": "Phoenix",
+    "Type": "General Contractor",
+    "Location": "Houston",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 3"
+  },
+  {
+    "Name": "Philadelphia",
+    "Type": "Plumbing Contractor",
+    "Location": "Phoenix",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 4"
+  },
+  {
+    "Name": "San Antonio",
+    "Type": "General Contractor",
+    "Location": "Philadelphia",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 5"
+  },
+  {
+    "Name": "San Diego",
+    "Type": "Plumbing Contractor",
+    "Location": "San Antonio",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 6"
+  },
+  {
+    "Name": "Dallas",
+    "Type": "General Contractor",
+    "Location": "San Diego",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 7"
+  },
+  {
+    "Name": "San Jose",
+    "Type": "Plumbing Contractor",
+    "Location": "Dallas",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 8"
+  },
+  {
+    "Name": "Austin",
+    "Type": "General Contractor",
+    "Location": "San Jose",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 9"
+  },
+  {
+    "Name": "Jacksonville",
+    "Type": "Plumbing Contractor",
+    "Location": "Austin",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 10"
+  },
+  {
+    "Name": "Fort Worth",
+    "Type": "General Contractor",
+    "Location": "Jacksonville",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 11"
+  },
+  {
+    "Name": "Columbus",
+    "Type": "Plumbing Contractor",
+    "Location": "Fort Worth",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 12"
+  },
+  {
+    "Name": "San Francisco",
+    "Type": "General Contractor",
+    "Location": "Columbus",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 13"
+  },
+  {
+    "Name": "Charlotte",
+    "Type": "Plumbing Contractor",
+    "Location": "San Francisco",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 14"
+  },
+  {
+    "Name": "Indianapolis",
+    "Type": "General Contractor",
+    "Location": "Charlotte",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 15"
+  },
+  {
+    "Name": "Seattle",
+    "Type": "Plumbing Contractor",
+    "Location": "Indianapolis",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 16"
+  },
+  {
+    "Name": "Denver",
+    "Type": "General Contractor",
+    "Location": "Seattle",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 17"
+  },
+  {
+    "Name": "Washington",
+    "Type": "Plumbing Contractor",
+    "Location": "Denver",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 18"
+  },
+  {
+    "Name": "Boston",
+    "Type": "General Contractor",
+    "Location": "Washington",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 19"
+  },
+  {
+    "Name": "El Paso",
+    "Type": "Plumbing Contractor",
+    "Location": "Boston",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 20"
+  },
+  {
+    "Name": "Detroit",
+    "Type": "General Contractor",
+    "Location": "El Paso",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 21"
+  },
+  {
+    "Name": "Nashville",
+    "Type": "Plumbing Contractor",
+    "Location": "Detroit",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 22"
+  },
+  {
+    "Name": "Memphis",
+    "Type": "General Contractor",
+    "Location": "Nashville",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 23"
+  },
+  {
+    "Name": "Portland",
+    "Type": "Plumbing Contractor",
+    "Location": "Memphis",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 24"
+  },
+  {
+    "Name": "Oklahoma City",
+    "Type": "General Contractor",
+    "Location": "Portland",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 25"
+  },
+  {
+    "Name": "Las Vegas",
+    "Type": "Plumbing Contractor",
+    "Location": "Oklahoma City",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 26"
+  },
+  {
+    "Name": "Louisville",
+    "Type": "General Contractor",
+    "Location": "Las Vegas",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 27"
+  },
+  {
+    "Name": "Baltimore",
+    "Type": "Plumbing Contractor",
+    "Location": "Louisville",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 28"
+  },
+  {
+    "Name": "Milwaukee",
+    "Type": "General Contractor",
+    "Location": "Baltimore",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 29"
+  },
+  {
+    "Name": "Albuquerque",
+    "Type": "Plumbing Contractor",
+    "Location": "Milwaukee",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 30"
+  },
+  {
+    "Name": "Tucson",
+    "Type": "General Contractor",
+    "Location": "Albuquerque",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 31"
+  },
+  {
+    "Name": "Fresno",
+    "Type": "Plumbing Contractor",
+    "Location": "Tucson",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 32"
+  },
+  {
+    "Name": "Sacramento",
+    "Type": "General Contractor",
+    "Location": "Fresno",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 33"
+  },
+  {
+    "Name": "Mesa",
+    "Type": "Plumbing Contractor",
+    "Location": "Sacramento",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 34"
+  },
+  {
+    "Name": "Kansas City",
+    "Type": "General Contractor",
+    "Location": "Mesa",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 35"
+  },
+  {
+    "Name": "Atlanta",
+    "Type": "Plumbing Contractor",
+    "Location": "Kansas City",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 36"
+  },
+  {
+    "Name": "Omaha",
+    "Type": "General Contractor",
+    "Location": "Atlanta",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 37"
+  },
+  {
+    "Name": "Miami",
+    "Type": "Plumbing Contractor",
+    "Location": "Omaha",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 38"
+  },
+  {
+    "Name": "Oakland",
+    "Type": "General Contractor",
+    "Location": "Miami",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 39"
+  },
+  {
+    "Name": "Minneapolis",
+    "Type": "Plumbing Contractor",
+    "Location": "Oakland",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 40"
+  },
+  {
+    "Name": "Tulsa",
+    "Type": "General Contractor",
+    "Location": "Minneapolis",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 41"
+  },
+  {
+    "Name": "Arlington",
+    "Type": "Plumbing Contractor",
+    "Location": "Tulsa",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 42"
+  },
+  {
+    "Name": "New Orleans",
+    "Type": "General Contractor",
+    "Location": "Arlington",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 43"
+  },
+  {
+    "Name": "Wichita",
+    "Type": "Plumbing Contractor",
+    "Location": "New Orleans",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 44"
+  },
+  {
+    "Name": "Cleveland",
+    "Type": "General Contractor",
+    "Location": "Wichita",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 45"
+  },
+  {
+    "Name": "Tampa",
+    "Type": "Plumbing Contractor",
+    "Location": "Cleveland",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 46"
+  },
+  {
+    "Name": "Bakersfield",
+    "Type": "General Contractor",
+    "Location": "Tampa",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 47"
+  },
+  {
+    "Name": "Aurora",
+    "Type": "Plumbing Contractor",
+    "Location": "Bakersfield",
+    "Include": "Partial",
+    "AdditionalParameter": "Parameter 48"
+  },
+  {
+    "Name": "Anaheim",
+    "Type": "General Contractor",
+    "Location": "Aurora",
+    "Include": "Full",
+    "AdditionalParameter": "Parameter 49"
+  }
+]

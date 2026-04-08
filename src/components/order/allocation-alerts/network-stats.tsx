@@ -1,0 +1,50 @@
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export default function NetworkStats() {
+  return (
+    <Card>
+      <CardHeader className="pb-3">
+        <CardTitle className="text-sm flex items-center">
+          <span className="mr-2">📊</span>
+          Network Stats
+        </CardTitle>
+        <p className="text-xs text-gray-500">Open Sales Orders of the same Item, from the same DC, on the same Day</p>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <span className="text-sm text-gray-600">All Alerts Count</span>
+            <span className="font-semibold">20</span>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <span className="text-sm text-gray-600">Summed Up Order Quantity</span>
+            <span className="font-semibold">70</span>
+          </div>
+
+          <div className="space-y-2">
+            <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-600">Current Supply Days Across Network</span>
+              <span className="font-semibold">282</span>
+            </div>
+            <div className="w-full bg-red-200 rounded-full h-2">
+              <div className="bg-red-500 h-2 rounded-full w-full"></div>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-600">Supply Days Across Network Allowed</span>
+              <span className="font-semibold">120</span>
+            </div>
+            <div className="w-full bg-green-200 rounded-full h-2">
+              <div className="bg-green-500 h-2 rounded-full w-full"></div>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
