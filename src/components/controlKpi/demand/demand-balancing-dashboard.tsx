@@ -8,7 +8,6 @@ import { Progress } from "@/components/ui/progress"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from "next/link"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts"
-import { useParams } from "next/navigation" 
 import {
   Dialog,
   DialogContent,
@@ -44,8 +43,6 @@ export default function DemandBalancingDashboard({ demandData }: DemandBalancing
   const stockCoverage = (demandData.currentStock / demandData.projectedDemand) * 100
   const backorderUnits = Math.max(0, demandData.projectedDemand - demandData.currentStock)
   const isHighPriority = demandData.actionPriority === "High"
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   const isLowStock = demandData.actionPriority === "High" || demandData.actionPriority === "Critical"
   
   // Mock forecast data
@@ -102,7 +99,7 @@ export default function DemandBalancingDashboard({ demandData }: DemandBalancing
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-4 mb-4">
-          <Link href={`/workspaces/${workspaceId}/controlKpi/demand-balancing`}>
+          <Link href={`/controlKpi/demand-balancing`}>
             <Button variant="ghost" size="sm">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Demand Balancing

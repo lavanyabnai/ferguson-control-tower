@@ -18,7 +18,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from "next/link"
-import { useParams } from "next/navigation"
 import {
   Dialog,
   DialogContent,
@@ -53,8 +52,6 @@ interface VRProductDashboardProps {
 export default function VRProductDashboard({ productData }: VRProductDashboardProps) {
   const stockPercentage = (productData.currentStock / productData.forecastDemand) * 100
   const isLowStock = productData.priority === "high" || productData.priority === "critical"
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   // Mock additional data for dashboard
   const weeklyData = [
     { week: "Week 1", sales: 1200, returns: 45 },
@@ -80,7 +77,7 @@ export default function VRProductDashboard({ productData }: VRProductDashboardPr
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-4 mb-4">
-          <Link href={`/workspaces/${workspaceId}/controlKpi/finishGoods`}>
+          <Link href={`/controlKpi/finishGoods`}>
             <Button variant="ghost" size="sm">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Inventory

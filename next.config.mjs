@@ -5,10 +5,18 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true, // Disables ESLint checks during builds
- 
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: '/workspaces/:workspaceId/controlKpi/:path*',
+        destination: '/controlKpi/:path*',
+        permanent: true,
+      },
+    ];
   },
 };
 

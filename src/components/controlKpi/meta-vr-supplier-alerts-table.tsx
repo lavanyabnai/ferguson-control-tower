@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { MoreHorizontal, AlertTriangle, Search, Filter, ArrowLeft } from "lucide-react"
-import { useParams } from "next/navigation"
 import Link from "next/link"
 
 const supplierAlertsData = [
@@ -233,9 +232,6 @@ function getSupplierStatusBadge(status: string) {
 }
 
 export default function MetaVRSupplierAlertsTable() {
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
-
   const criticalAlerts = supplierAlertsData.filter((item) => item.priority === "Critical").length
   const totalImpact = supplierAlertsData.reduce((sum, item) => sum + item.estimatedImpact, 0)
   const avgShortage =
@@ -246,7 +242,7 @@ export default function MetaVRSupplierAlertsTable() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <Link href={`/workspaces/${workspaceId}/controlKpi/supplyChain`}>
+          <Link href={`/controlKpi/supplyChain`}>
             <Button variant="ghost" size="sm">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Supply Chain Control Tower
@@ -325,7 +321,7 @@ export default function MetaVRSupplierAlertsTable() {
                 key={index} 
                 className="hover:bg-muted/50 cursor-pointer"
                 onClick={() => {
-                  window.location.href = `/workspaces/${workspaceId}/controlKpi/supplier-alerts/${encodeURIComponent(item.supplierCode)}-${encodeURIComponent(item.materialCode)}-${index}`
+                  window.location.href = `/controlKpi/supplier-alerts/${encodeURIComponent(item.supplierCode)}-${encodeURIComponent(item.materialCode)}-${index}`
                 }}
               >
                 <TableCell className="font-medium">

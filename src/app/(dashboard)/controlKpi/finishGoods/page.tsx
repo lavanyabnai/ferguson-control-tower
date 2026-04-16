@@ -1,22 +1,17 @@
 "use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import MetaVRFinishedGoodsTable from "@/app/(dashboard)/workspaces/[workspaceId]/controlKpi/finished-goods/page"
+import MetaVRFinishedGoodsTable from "@/app/(dashboard)/controlKpi/finished-goods/page"
 import MetaVRAgingDashboard from "@/components/controlKpi/meta-vr-aging-dashboard"
 
-import InvProj from "@/app/(dashboard)/workspaces/[workspaceId]/controlKpi/invProj/page"
+import InvProj from "@/app/(dashboard)/controlKpi/invProj/page"
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
-import { useParams } from "next/navigation"
-
-
 export default function RawMaterial() {
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   return (
     <div className="w-full space-y-6">
-    <Link href={`/workspaces/${workspaceId}/controlKpi/supplyChain`}>
+    <Link href={`/controlKpi/supplyChain`}>
     <Button variant="ghost" size="sm">
       <ArrowLeft className="h-4 w-4 mr-2" />
       Back to Supply Chain Control Tower

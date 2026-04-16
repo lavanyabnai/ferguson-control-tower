@@ -27,7 +27,6 @@ import {
 } from "@/components/ui/dialog"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts"
 import Link from "next/link"
-import { useParams } from "next/navigation"
 interface SupplierData {
   supplierName: string
   supplierCode: string
@@ -56,8 +55,6 @@ interface SupplierOOSDashboardProps {
 export default function SupplierOOSDashboard({ supplierData }: SupplierOOSDashboardProps) {
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   const isCritical = supplierData.priority === "Critical"
 
   // Mock data for charts and analysis
@@ -149,7 +146,7 @@ export default function SupplierOOSDashboard({ supplierData }: SupplierOOSDashbo
       <header className="bg-white border-b">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center gap-4">
-            <Link href={`/workspaces/${workspaceId}/controlKpi/supplier-alerts`}>
+            <Link href={`/controlKpi/supplier-alerts`}>
               <Button variant="ghost" size="sm">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Supplier Alerts

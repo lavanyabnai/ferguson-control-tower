@@ -20,9 +20,6 @@ import {
 } from "lucide-react"
 import { Bar, BarChart, Line, LineChart, XAxis, YAxis, CartesianGrid } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { useParams } from "next/navigation"
-
-
 // Updated data structures for horizontal tree
 const otifTreeData = {
   totalLoss: 100,
@@ -165,8 +162,6 @@ const otifTrendData = [
 export default function ControlTowerDashboard() {
   const [selectedModule, setSelectedModule] = useState<number | null>(null)
   const [selectedControlModule] = useState<number | null>(null)
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
 // Control Tower Modules Data
 const controlTowerModules = [
   {
@@ -181,7 +176,7 @@ const controlTowerModules = [
     alerts: 12,
     status: "warning",
     kpi: "Forecast Accuracy: 70%",
-    href: `/workspaces/${workspaceId}/controlKpi/demand-balancing`,
+    href: `/controlKpi/demand-balancing`,
   },
   {
     id: 2,
@@ -195,7 +190,7 @@ const controlTowerModules = [
     alerts: 22,
     status: "critical",
     kpi: "FG Coverage: 78%",
-    href: `/workspaces/${workspaceId}/controlKpi/finishGoods`,
+    href: `/controlKpi/finishGoods`,
   },
   {
     id: 3,
@@ -209,9 +204,9 @@ const controlTowerModules = [
     alerts: 18,
     status: "warning",
     kpi: "Customer OTIF: 92%",
-    href: `/workspaces/${workspaceId}/controlKpi/custReceipt`,
+    href: `/controlKpi/custReceipt`,
   },
-  
+
   {
     id: 4,
     name: "Manufacturing",
@@ -224,7 +219,7 @@ const controlTowerModules = [
     alerts: 6,
     status: "normal",
     kpi: "Production OTIF: 95%",
-    href: `/workspaces/${workspaceId}/controlKpi/manfDash`,
+    href: `/controlKpi/manfDash`,
   },
   {
     id: 5,
@@ -238,9 +233,9 @@ const controlTowerModules = [
     alerts: 8,
     status: "normal",
     kpi: "Supplier OTIF: 85%",
-    href: `/workspaces/${workspaceId}/controlKpi/supplier-alerts`,
+    href: `/controlKpi/supplier-alerts`,
   },
- 
+
 
 
   {
@@ -255,7 +250,7 @@ const controlTowerModules = [
     alerts: 15,
     status: "critical",
     kpi: "RM Coverage: 65%",
-    href: `/workspaces/${workspaceId}/controlKpi/rawMaterial`,
+    href: `/controlKpi/rawMaterial`,
   },
 ]
 

@@ -7,7 +7,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { MoreHorizontal, AlertTriangle, Search, Filter, ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import { useParams } from "next/navigation"
 
 const demandBalancingData = [
   {
@@ -208,14 +207,12 @@ function getActionBadge(action: string) {
 export default function MetaVRDemandBalancingTable() {
   const openAlerts = demandBalancingData.filter((item) => item.actionPriority === "High").length
   const totalRevenue = demandBalancingData.reduce((sum, item) => sum + item.revenueImpact, 0)
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   return (
     <div className="w-full space-y-4 p-6">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-        <Link href={`/workspaces/${workspaceId}/controlKpi/supplyChain`}>
+        <Link href={`/controlKpi/supplyChain`}>
             <Button variant="ghost" size="sm">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Supply Chain Control Tower  
@@ -295,7 +292,7 @@ export default function MetaVRDemandBalancingTable() {
             {demandBalancingData.map((item, index) => (
               <TableRow key={index} className="hover:bg-muted/50 cursor-pointer">
                 <Link
-                  href={`/workspaces/${workspaceId}/controlKpi/demand-balancing/${encodeURIComponent(item.sourceLocation)}-${encodeURIComponent(item.materialCode)}-${index}`}
+                  href={`/controlKpi/demand-balancing/${encodeURIComponent(item.sourceLocation)}-${encodeURIComponent(item.materialCode)}-${index}`}
                   className="contents"
                 >
                   <TableCell className="font-medium">{item.sourceLocation}</TableCell>

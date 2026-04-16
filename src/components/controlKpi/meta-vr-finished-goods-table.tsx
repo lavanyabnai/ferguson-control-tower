@@ -7,7 +7,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { MoreHorizontal, AlertTriangle, Search, TrendingUp, TrendingDown } from "lucide-react"
 
-import { useParams } from "next/navigation"
 
 
 const finishedGoodsData = [
@@ -182,8 +181,6 @@ function getSalesVelocityIcon(velocity: string) {
 }
 
 export default function MetaVRFinishedGoodsTable() {
-  const params = useParams()
-  const workspaceId = params.workspaceId as string
   const criticalAlerts = finishedGoodsData.filter((item) => item.priority === "critical").length
   const highAlerts = finishedGoodsData.filter((item) => item.priority === "high").length
   const totalUnits = finishedGoodsData.reduce((sum, item) => sum + item.currentStock, 0)
@@ -259,7 +256,7 @@ export default function MetaVRFinishedGoodsTable() {
                 key={index} 
                 className="hover:bg-muted/50 cursor-pointer"
                 onClick={() => {
-                  window.location.href = `/workspaces/${workspaceId}/controlKpi/finished-goods/${encodeURIComponent(item.distributionCenter)}-${encodeURIComponent(item.sku)}`
+                  window.location.href = `/controlKpi/finished-goods/${encodeURIComponent(item.distributionCenter)}-${encodeURIComponent(item.sku)}`
                 }}
               >
                 <TableCell className="font-medium">
