@@ -9,11 +9,7 @@ import { TowerControl, Boxes, PackageCheck, Warehouse, HandCoins, Banknote, Truc
 
 import { MegaDropdownCategories } from "@/components/mega-dropdown-categories";
 
-const WORKSPACE_ID = "67a60a37003b04bcd9ff";
-
 export const HeaderBlue = () => {
-  const workspaceId = WORKSPACE_ID;
-
   const categories = [
     {
       category: "Supply Chain Modules",
@@ -22,7 +18,7 @@ export const HeaderBlue = () => {
           name: "Control Tower",
           description: "Distribution network performance & OTIF monitoring",
           shortDescription: "Network Performance & OTIF",
-          to: `/workspaces/${workspaceId}/controlKpi/supplyChain`,
+          to: `/controlKpi/supplyChain`,
           icon: TowerControl,
           iconBackground: "bg-violet-100",
           iconForeground: "text-violet-700",
@@ -32,7 +28,7 @@ export const HeaderBlue = () => {
           name: "e2e Supply Chain",
           description: "End-to-end wholesale distribution pipeline",
           shortDescription: "End to End Distribution",
-          to: `/workspaces/${workspaceId}/inventory/dashboard`,
+          to: `/inventory/dashboard`,
           icon: Boxes,
           iconBackground: "bg-blue-100",
           iconForeground: "text-blue-700",
@@ -41,7 +37,7 @@ export const HeaderBlue = () => {
           name: "Orders",
           description: "Customer order management & allocation",
           shortDescription: "Order Management",
-          to: `/workspaces/${workspaceId}/orders/home`,
+          to: `/orders/home`,
           icon: PackageCheck,
           iconBackground: "bg-emerald-100",
           iconForeground: "text-emerald-700",
@@ -50,7 +46,7 @@ export const HeaderBlue = () => {
           name: "Warehousing",
           description: "Distribution center operations",
           shortDescription: "Distribution Center Ops",
-          to: `/workspaces/${workspaceId}/warehouse/control`,
+          to: `/warehouse/control`,
           icon: Warehouse,
           iconBackground: "bg-purple-100",
           iconForeground: "text-purple-700",
@@ -59,7 +55,7 @@ export const HeaderBlue = () => {
           name: "Procurement",
           description: "Vendor & supplier management",
           shortDescription: "Vendor Management",
-          to: `/workspaces/${workspaceId}/procure/procureGov`,
+          to: `/procure/procureGov`,
           icon: HandCoins,
           iconBackground: "bg-orange-100",
           iconForeground: "text-orange-700",
@@ -68,7 +64,7 @@ export const HeaderBlue = () => {
           name: "Finance",
           description: "Manage finance",
           shortDescription: "Finance Management",
-          to: `/workspaces/${workspaceId}/financeRoute/finance`,
+          to: `/financeRoute/finance`,
           icon: Banknote,
           iconBackground: "bg-yellow-100",
           iconForeground: "text-yellow-700",
@@ -77,7 +73,7 @@ export const HeaderBlue = () => {
           name: "Transportation",
           description: "Manage transportation",
           shortDescription: "Transportation Management",
-          to: `/workspaces/${workspaceId}/transport/alerts`,
+          to: `/transport/alerts`,
           icon: Truck,
           iconBackground: "bg-indigo-100",
           iconForeground: "text-indigo-700",
@@ -86,7 +82,7 @@ export const HeaderBlue = () => {
           name: "Master Scheduling",
           description: "Demand vs supply scheduling summary",
           shortDescription: "Master Scheduling Summary",
-          to: `/workspaces/${workspaceId}/controlKpi/master-scheduling`,
+          to: `/controlKpi/master-scheduling`,
           icon: CalendarClock,
           iconBackground: "bg-teal-100",
           iconForeground: "text-teal-700",
@@ -95,7 +91,7 @@ export const HeaderBlue = () => {
           name: "Asset Utilization",
           description: "Track and optimize asset usage across operations",
           shortDescription: "Asset Usage & Optimization",
-          to: `/workspaces/${workspaceId}/assets/utilization`,
+          to: `/assets/utilization`,
           icon: Gauge,
           iconBackground: "bg-rose-100",
           iconForeground: "text-rose-700",
@@ -103,7 +99,6 @@ export const HeaderBlue = () => {
         },
       ],
     },
-  
   ];
 
   return (
@@ -112,9 +107,9 @@ export const HeaderBlue = () => {
         <div className="flex items-center gap-x-2">
           <MobileSidebar />
           <Link href="/" className="flex items-center gap-2">
-       <Image className="block lg:hidden" src="/assets/ferguson-logo.jpeg" alt="Ferguson logo" width={40} height={40} />
+            <Image className="block lg:hidden" src="/assets/ferguson-logo.jpeg" alt="Ferguson logo" width={40} height={40} />
             <Image className="hidden lg:block" src="/assets/ferguson-light.svg" alt="Ferguson" width={142} height={18} />
-      </Link>
+          </Link>
         </div>
         <GlobalSearch />
         <div className="flex items-center gap-2">

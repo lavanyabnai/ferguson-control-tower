@@ -8,15 +8,15 @@ import { cn } from "@/lib/utils";
 
 import { useGetProjects } from "@/features/projects/api/use-get-projects";
 import { ProjectAvatar } from "@/features/projects/components/project-avatar";
-import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 import { useCreateProjectModal } from "@/features/projects/hooks/use-create-project-modal";
+
+const WORKSPACE_ID = "67a60a37003b04bcd9ff";
 
 export const Projects = () => {
   const pathname = usePathname();
   const { open } = useCreateProjectModal();
-  const workspaceId = useWorkspaceId();
   const { data } = useGetProjects({
-    workspaceId,
+    workspaceId: WORKSPACE_ID,
   });
 
   return (
@@ -26,7 +26,7 @@ export const Projects = () => {
         <RiAddCircleFill onClick={open} className="size-5 text-neutral-500 cursor-pointer hover:opacity-75 transition" />
       </div>
       {data?.documents.map((project) => {
-        const href = `/workspaces/${workspaceId}/projects/${project.$id}`;
+        const href = `/projects/${project.$id}`;
         const isActive = pathname === href;
 
         return (

@@ -9,7 +9,6 @@ import {
 import { LiaBroadcastTowerSolid } from "react-icons/lia";
 import { FaChartArea } from "react-icons/fa";
 
-import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 import { TbCheckupList } from "react-icons/tb";
 import { FaBalanceScale } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
@@ -120,13 +119,12 @@ const routes = [
 ];
 
 export const Navigation = () => {
-  const workspaceId = useWorkspaceId();
   const pathname = usePathname();
 
   return (
     <ul className="flex flex-col">
       {routes.map((item) => {
-        const fullHref = `/workspaces/${workspaceId}${item.href}`;
+        const fullHref = item.href;
         const isActive = pathname === fullHref;
         const Icon = isActive ? item.activeIcon : item.icon;
 

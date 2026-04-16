@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 
 import { FaChartArea } from "react-icons/fa";
 
@@ -23,13 +22,12 @@ const routes = [
 ];
 
 export const DigitalNavigation = () => {
-  const workspaceId = useWorkspaceId();
   const pathname = usePathname();
 
   return (
     <ul className="flex flex-col">
       {routes.map((item) => {
-        const fullHref = `/workspaces/${workspaceId}${item.href}`;
+        const fullHref = item.href;
         const isActive = pathname === fullHref;
         const Icon = isActive ? item.activeIcon : item.icon;
 

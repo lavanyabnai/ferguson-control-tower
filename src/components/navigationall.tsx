@@ -3,22 +3,19 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
-
 import { DottedSeparator } from "@/components/dotted-separator";
 import { Projects } from "@/components/projects";
 import { cn } from "@/lib/utils";
 
 
 export const NavigationAll = ({ data, data2 }: { data: any, data2: any }) => {
-  const workspaceId = useWorkspaceId();
   const pathname = usePathname();
 
   return (
     <div>
       <ul className="flex flex-col">
         {data.map((item: any) => {
-          const fullHref = `/workspaces/${workspaceId}${item.href}`;
+          const fullHref = item.href;
           const isActive = pathname === fullHref;
           const Icon = isActive ? item.activeIcon : item.icon;
 
@@ -42,7 +39,7 @@ export const NavigationAll = ({ data, data2 }: { data: any, data2: any }) => {
       <DottedSeparator className="my-4" />
       <ul className="flex flex-col">
         {data2.map((item: any) => {
-          const fullHref = `/workspaces/${workspaceId}${item.href}`;
+          const fullHref = item.href;
           const isActive = pathname === fullHref;
           const Icon = isActive ? item.activeIcon : item.icon;
 

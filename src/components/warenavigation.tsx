@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 
 import { GoServer, GoNorthStar } from "react-icons/go";
 import { MdOutlineWarehouse } from "react-icons/md";
@@ -84,13 +83,12 @@ const routes = [
 ];
 
 export const WareNavigation = () => {
-  const workspaceId = useWorkspaceId();
   const pathname = usePathname();
 
   return (
     <ul className="flex flex-col">
       {routes.map((item) => {
-        const fullHref = `/workspaces/${workspaceId}${item.href}`;
+        const fullHref = item.href;
         const isActive = pathname === fullHref;
         const Icon = isActive ? item.activeIcon : item.icon;
 
