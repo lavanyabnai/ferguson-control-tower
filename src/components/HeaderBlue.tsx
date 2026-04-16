@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MobileSidebar } from "./mobile-sidebar";
 import { GlobalSearch } from "./global-search";
 
-import { TowerControl, Boxes, PackageCheck, Warehouse, HandCoins, Banknote, Truck } from "lucide-react";
+import { TowerControl, Boxes, PackageCheck, Warehouse, HandCoins, Banknote, Truck, CalendarClock, Gauge } from "lucide-react";
 
 import { MegaDropdownCategories } from "@/components/mega-dropdown-categories";
 
@@ -82,7 +82,25 @@ export const HeaderBlue = () => {
           iconBackground: "bg-indigo-100",
           iconForeground: "text-indigo-700",
         },
-      
+        {
+          name: "Master Scheduling",
+          description: "Demand vs supply scheduling summary",
+          shortDescription: "Master Scheduling Summary",
+          to: `/workspaces/${workspaceId}/controlKpi/master-scheduling`,
+          icon: CalendarClock,
+          iconBackground: "bg-teal-100",
+          iconForeground: "text-teal-700",
+        },
+        {
+          name: "Asset Utilization",
+          description: "Track and optimize asset usage across operations",
+          shortDescription: "Asset Usage & Optimization",
+          to: `/workspaces/${workspaceId}/assets/utilization`,
+          icon: Gauge,
+          iconBackground: "bg-rose-100",
+          iconForeground: "text-rose-700",
+          fullWidth: true,
+        },
       ],
     },
   

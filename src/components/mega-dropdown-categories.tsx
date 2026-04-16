@@ -21,6 +21,7 @@ interface DropdownCategory {
     iconBackground?: string
     iconForeground?: string
     shortDescription?: string
+    fullWidth?: boolean
   }[]
 }
 
@@ -59,6 +60,7 @@ export function MegaDropdownCategories({ categories }: MegaDropdownProps) {
                     className={cn(
                       "group flex items-center gap-3 rounded-lg px-3 py-2.5 cursor-pointer",
                       item.highlight && "bg-accent/50",
+                      item.fullWidth && "col-span-2 w-full",
                     )}
                   >
                     <div
