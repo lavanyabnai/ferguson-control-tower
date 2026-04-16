@@ -9,8 +9,7 @@ import { cn } from "@/lib/utils";
 import { useGetProjects } from "@/features/projects/api/use-get-projects";
 import { ProjectAvatar } from "@/features/projects/components/project-avatar";
 import { useCreateProjectModal } from "@/features/projects/hooks/use-create-project-modal";
-
-const WORKSPACE_ID = "67a60a37003b04bcd9ff";
+import { WORKSPACE_ID } from "@/config";
 
 export const Projects = () => {
   const pathname = usePathname();
